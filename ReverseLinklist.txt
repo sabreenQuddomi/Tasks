@@ -1,0 +1,27 @@
+// Reverse Linklist 
+Public void ReverseLinklist(Node * head ){
+Node * Next  , * Prev =null;
+Node * current = head ;
+if (head==Null) return;
+
+While (current != null ){
+
+Next=current->next ;
+current->next=Prev;
+Perv=Current ;
+Current=Next;
+
+}
+
+head = prev;
+
+
+}
+
+
+test case :
+
+1- node head null ;
+2- Numbers of linklist  < 2
+3- not combination between link list right might seperated linklist;
+4- may in linklist have loop or circural linklist 

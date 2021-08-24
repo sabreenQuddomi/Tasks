@@ -1,0 +1,35 @@
+//Sort balls Array
+Public Void SortsArray (Ball[]){
+int Reds = 0;
+int Greens = Ball.lenght -1;
+for (int i=0 ; i< Greens ; i++){
+if (Reds < Greens ){
+
+if (Ball[i]=='R')
+{
+char Temp =Ball[i]; 
+Ball[i]=Ball[Reds];
+Ball[Reds]=Temp;
+Reds++;
+}
+else if (Ball[i]=='G'){
+
+char Temp =Ball[i]; 
+Ball[i]=Ball[Greens];
+Ball[Greens]=Temp;
+Greens--;
+i--;
+
+
+}
+
+
+}
+}
+
+}
+//
+ test case 
+ Array lenght =  0 , 1
+ visited elements out of range array 
+ sort array green then blue then blue 

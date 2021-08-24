@@ -1,0 +1,26 @@
+// First Question  Ladder Climbing 
+//N = Number of length ladder . 
+Public int FindNumOFClimb(int N ,string Res ){
+if(N<0)
+{
+return ;
+}
+if (N == 0 ){
+println(Res);
+return ;
+}
+
+
+else {
+ FindNumOFClimb(N-1,Res+"1");
+ FindNumOFClimb(N-2,Res+"2");
+ FindNumOFClimb(N-3,Res+"3");
+
+
+}
+
+
+}
+Test Cases :
+1-  N <0   OR  N =0     this is case  
+2-  print summation of nummber of step > or < length of ladder

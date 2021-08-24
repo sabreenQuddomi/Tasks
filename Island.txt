@@ -1,0 +1,53 @@
+//Island Problem 
+Public Int NumIsland(M[row][Col]){
+int count =0;
+for(int i =0 ; i< row;i++){
+for(int j=0 ; i< col;j++){
+
+if(M[i][j]=='1'){
+count++;
+
+VisitAllDirction(M,i,j);
+
+
+}
+
+
+
+
+}
+}
+retrun Count; 
+
+
+
+} 
+
+
+Public Void VisitAllDirction ( int M [][] , int i , int j){
+
+ if (i<0 || j<0 || i > rowofM || j > ColofM){
+  retrun;
+ }
+M[i][j]=-1; // define this elemnt is visited 
+VisitAllDirction(M,i+1,j);
+VisitAllDirction(M,i-1,j);
+VisitAllDirction (M,i,j-1);
+VisitAllDirction(M,i,j+1);
+
+}
+
+
+// 
+test Case 
+1-Array Null of all it zeros
+2-When Visited  element without 4 diriction for it 
+3-Visited element out of range of array
+
+
+
+
+
+
+
+}
